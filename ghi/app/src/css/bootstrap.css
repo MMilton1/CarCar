@@ -1,0 +1,47 @@
+/* Custom styles for Bootstrap Carousel arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none !important; /* Remove default arrows */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Adjust the size */
+  height: 50px; /* Adjust the size */
+  background-color: #007bff; /* Background color of the arrows */
+  border-radius: 50%; /* Makes the arrows background circle */
+  color: white; /* Arrow color */
+}
+
+.carousel-control-prev::before,
+.carousel-control-next::before {
+  content: ""; /* Remove default content */
+  display: inline-block;
+  width: 20px; /* Width of the custom arrow */
+  height: 20px; /* Height of the custom arrow */
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 8 8"><path d="M5.5 0l-5 4 5 4V5H8V3H5.5V0z"/></svg>');
+}
+
+.carousel-control-next {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 8 8"><path d="M2.5 0v3H0v2h2.5v3l5-4-5-4z"/></svg>');
+}
+
+/* Increase the size of the carousel arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  font-size: 30px; /* Adjust size */
+}
+
+/* Change color - you may need to add !important to override default styles */
+.carousel-control-prev,
+.carousel-control-next {
+  color: red !important; /* Change the color */
+}
